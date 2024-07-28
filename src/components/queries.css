@@ -1,0 +1,67 @@
+@media (width < 580px) {
+  .home-section-2 {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .home-section-2-img-container {
+    width: 50%;
+  }
+  .card-container {
+    height: auto;
+    flex-direction: column;
+    padding: 1.5em 0;
+    align-items: center;
+  }
+  .card-description {
+    background-color: white;
+    > div {
+      text-align: center;
+    }
+  }
+  .total-price-card-container {
+    > div:nth-child(2) {
+      flex-direction: column;
+    }
+  }
+}
+@media (width > 1080px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+@media (width < 780px) {
+  .home-section-container {
+    display: block;
+    width: 100%;
+    & img {
+      height: 100%;
+    }
+  }
+  .home-section-3-services-icons {
+    flex-direction: column;
+    gap: 3em;
+  }
+  footer {
+    & img {
+      width: 100%;
+    }
+  }
+  .div-img-text-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-footer-container {
+    width: 60%;
+  }
+  .product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (width < 1000px) {
+  .home-section-container {
+    height: 450px;
+  }
+}

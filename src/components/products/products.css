@@ -1,0 +1,32 @@
+.product-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+}
+.product-description {
+  width: 50%;
+  & button {
+    font-size: 1em;
+  }
+}
+.product-card-container {
+  width: 300px;
+  border-radius: 5px;
+  margin: 2em;
+  display: flex;
+  padding: 1em;
+  background-color: var(--white-color);
+  box-shadow: 0 0 5px gray;
+}
+.product-img-container {
+  display: grid;
+  place-items: center;
+  width: 50%;
+  & img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+  }
+}

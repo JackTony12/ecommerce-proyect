@@ -1,0 +1,193 @@
+.home-section-container {
+ height: 500px;
+ display: flex;
+ overflow: hidden;
+ width: 100%;
+ position: relative;
+ > div {
+  height: 100%;
+ }
+ & img {
+  object-fit: cover;
+  object-position: top;
+  width: 120%;
+
+  transition: 0.8s ease;
+  filter: brightness(0.5);
+  &:hover {
+   transform: scale(1.1);
+   filter: brightness(1);
+  }
+ }
+}
+
+.home-slogan {
+ z-index: 500;
+ color: var(--white-color);
+ position: absolute;
+ left: 8%;
+ bottom: 10%;
+ word-wrap: break-word;
+ width: 350px;
+ font-size: 2em;
+}
+
+/* SECTION 2 ADN CARD STYLE ====================================*/
+.home-section-2 {
+ margin: 15em 0;
+ height: 400px;
+ background-color: var(--white-color);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 2em;
+}
+.home-section-2-img-container {
+ height: 100%;
+ & img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+ }
+}
+.home-section-2-text {
+ width: 50%;
+ display: flex;
+ flex-direction: column;
+ gap: 3em;
+ color: var(--black-color-05);
+}
+/* CARD================================================== */
+.card-container {
+ border: 1px solid #dbdbdb;
+ box-shadow: 0 0 10px rgb(187, 187, 187);
+ border-radius: 15px;
+ display: flex;
+ width: 90%;
+ max-width: 450px;
+ height: 200px;
+ & img {
+  object-fit: cover;
+  width: 60%;
+  min-width: 100px;
+ }
+ & h3 {
+  margin: 1em 0 0 0;
+ }
+}
+.card-description {
+ background-color: var(--primary-color-blue-00);
+ border-radius: 0 15px 15px 0;
+ width: 50%;
+ display: flex;
+ justify-content: center;
+ padding: 0 1em;
+ > div {
+  text-align: center;
+ }
+ & button {
+  margin-top: 20%;
+ }
+}
+
+.card-img-container {
+ display: grid;
+ place-items: center;
+ width: 50%;
+}
+/* SECTION 3============================================================ */
+.home-section-3 {
+ display: flex;
+ flex-direction: column;
+ margin: 15em 0;
+ gap: 3em;
+ text-align: center;
+}
+
+.home-section-3-services-icons {
+ display: flex;
+ justify-content: space-around;
+ > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+}
+
+.service-icon {
+ font-size: 5em;
+ color: var(--black-color-05);
+ transition: 0.7s;
+ &:hover {
+  transform: scale(1.1);
+ }
+}
+
+/*footer================================= */
+footer {
+ color: var(--black-color);
+ margin-bottom: 10em;
+ & img {
+  object-fit: cover;
+  width: 80%;
+ }
+}
+.div-img-text-group {
+ display: flex;
+ width: 100%;
+ text-wrap: balance;
+}
+.img-footer-container {
+ width: 70%;
+ display: grid;
+ place-content: center;
+}
+.text-footer-container {
+ width: 80%;
+ padding-left: 4em;
+ & ul {
+  list-style: none;
+  border-left: 4px solid #ff294d;
+ }
+ & strong {
+  color: #ff294d;
+  font-size: 1.2em;
+ }
+}
+.credits {
+ box-sizing: border-box;
+ color: rgb(0, 0, 0);
+ width: 100%;
+ margin-top: 5em;
+ display: flex;
+ justify-content: center;
+ padding: 2em;
+}
+.logoAl-img {
+ position: relative;
+ width: 100px;
+ &:hover img {
+  transform: rotate(90deg);
+ }
+ &:hover::after {
+  opacity: 1;
+  transform: translateX(60%);
+ }
+ &::after {
+  position: absolute;
+  content: 'Aleon Code </>';
+  color: rgb(0, 0, 0);
+  top: 50%;
+  left: 0;
+  z-index: -100;
+  opacity: 0;
+  transition: 0.3s ease-out;
+  width: 140%;
+ }
+ & img {
+  transition: 0.4s ease-out;
+  object-fit: cover;
+  cursor: pointer;
+  width: 100px;
+ }
+}
